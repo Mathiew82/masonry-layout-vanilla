@@ -1,5 +1,7 @@
 $primary-color: #259;
 $bg-color: #e0e1e2;
+$border-color: #ccc;
+$border-radius: 8px;
 
 @keyframes circular {
   0% {
@@ -8,6 +10,20 @@ $bg-color: #e0e1e2;
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin card-shadow {
+  border-radius: $border-radius;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
 }
 
 * {
@@ -20,6 +36,35 @@ $bg-color: #e0e1e2;
 body {
   background-color: $bg-color;
   margin: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    color: lighten($primary-color, 10%);
+  }
+}
+
+select {
+  width: 300px;
+  height: 40px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-size: 14px;
+  padding: 0 10px;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+  @include card-shadow();
+  animation: fadeIn 1s;
 }
 
 #loading {
@@ -62,19 +107,26 @@ body {
   }
 }
 
-img {
-  width: 100%;
-  display: block;
-  margin-bottom: 2rem;
+.btn {
+  background-color: $primary-color;
+  border-radius: $border-radius;
+  color: white;
+  margin: 0 10px;
+  padding: 14px 30px;
+  transition: background-color .2s;
+  &:hover {
+    background-color: lighten($primary-color, 15%);
+    color: white;
+  }
 }
 
 .card {
   width: 100%;
   background-color: white;
-  border: 1px solid grey;
-  border-radius: 4px;
   margin-bottom: 2rem;
   padding: 20px;
+  animation: fadeIn 1s;
+  @include card-shadow();
   > h4 {
     color: $primary-color;
     margin-bottom: 1rem;
@@ -87,20 +139,4 @@ img {
 
 .mt2rem {
   margin-top: 2rem;
-}
-
-a {
-  color: $primary-color;
-  &:hover {
-    color: lighten($primary-color, 10%);
-  }
-}
-
-select {
-  width: 300px;
-  height: 40px;
-  font-size: 14px;
-  &:focus {
-    outline: none !important;
-  }
 }
