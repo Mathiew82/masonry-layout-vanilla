@@ -1,24 +1,24 @@
 const fecthMasonry = (container, items, columns) => {
-  let containerElement = document.querySelector(`#${container}`);
-  let wrapperContainerElement = containerElement.parentNode;
+  const CONTAINER_EL = document.querySelector(`#${container}`);
+  const WRAPPER_CONTAINER_EL = CONTAINER_EL.parentNode;
 
-  const ITEMS_ELEMENTS = Array.from(document.querySelectorAll(`.${items}`));
-  containerElement.parentNode.removeChild(containerElement);
+  const ITEMS_ELS = Array.from(document.querySelectorAll(`.${items}`));
+  CONTAINER_EL.parentNode.removeChild(CONTAINER_EL);
 
-  const newContainerElement = document.createElement('div');
-  newContainerElement.setAttribute('id', container);
-  newContainerElement.classList.add('masonry-layout', `columns-${columns}`);
-  wrapperContainerElement.appendChild(newContainerElement);
+  const NEW_CONTAINER_EL = document.createElement('div');
+  NEW_CONTAINER_EL.setAttribute('id', container);
+  NEW_CONTAINER_EL.classList.add('masonry-layout', `columns-${columns}`);
+  WRAPPER_CONTAINER_EL.appendChild(NEW_CONTAINER_EL);
   
   for (let i = 1; i <= columns; i++) {
     const COLUMN = document.createElement('div');
     COLUMN.classList.add(`masonry-column-${i}`);
-    newContainerElement.appendChild(COLUMN);
+    NEW_CONTAINER_EL.appendChild(COLUMN);
   }
 
   let countColumn = 1;
 
-  ITEMS_ELEMENTS.forEach((item, index) => {
+  ITEMS_ELS.forEach((item) => {
     let col = document.querySelector(`.masonry-column-${countColumn}`);
     col.appendChild(item);
     countColumn = countColumn < columns ? countColumn + 1 : 1;

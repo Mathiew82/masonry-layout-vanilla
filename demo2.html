@@ -13,44 +13,36 @@
     <div class="icon-loading"></div>
   </div>
 
-  <div class="tac mt2rem">
-    <select
-      name="columns-select"
-      id="columns-select"
-      data-selector-id="masonry-2"
-      data-selector-class="image-2">
-      <option value="">Seleccionar cantidad de columnas</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-  </div>
+  <button class="btn fr" onclick="fecthMasonry('masonry', 'image', 4)">4 COLS</button>
+  <button class="btn fr" onclick="fecthMasonry('masonry', 'image', 3)">3 COLS</button>
+  <button class="btn fr" onclick="fecthMasonry('masonry', 'image', 2)">2 COLS</button>
+  <div class="clb"></div>
 
   <div id="wrapper-masonry">
-    <div id="masonry-2">
-      <img src="images/photo-1.jpeg" class="image-2" />
-      <img src="images/photo-2.jpeg" class="image-2" />
-      <img src="images/photo-3.jpeg" class="image-2" />
-      <img src="images/photo-4.jpeg" class="image-2" />
-      <img src="images/photo-5.jpeg" class="image-2" />
-      <img src="images/photo-6.jpeg" class="image-2" />
-      <img src="images/photo-7.jpeg" class="image-2" />
-      <img src="images/photo-8.jpeg" class="image-2" />
-      <img src="images/photo-9.jpeg" class="image-2" />
-      <img src="images/photo-10.jpeg" class="image-2" />
-      <img src="images/photo-11.jpeg" class="image-2" />
-      <img src="images/photo-12.jpeg" class="image-2" />
-      <img src="images/photo-13.jpeg" class="image-2" />
-      <img src="images/photo-14.jpeg" class="image-2" />
-      <img src="images/photo-15.jpeg" class="image-2" />
-      <img src="images/photo-16.jpeg" class="image-2" />
-      <img src="images/photo-17.jpeg" class="image-2" />
-      <img src="images/photo-18.jpeg" class="image-2" />
+    <div id="masonry">
+      <img src="images/photo-1.jpeg" class="image" />
+      <img src="images/photo-2.jpeg" class="image" />
+      <img src="images/photo-3.jpeg" class="image" />
+      <img src="images/photo-4.jpeg" class="image" />
+      <img src="images/photo-5.jpeg" class="image" />
+      <img src="images/photo-6.jpeg" class="image" />
+      <img src="images/photo-7.jpeg" class="image" />
+      <img src="images/photo-8.jpeg" class="image" />
+      <img src="images/photo-9.jpeg" class="image" />
+      <img src="images/photo-10.jpeg" class="image" />
+      <img src="images/photo-11.jpeg" class="image" />
+      <img src="images/photo-12.jpeg" class="image" />
+      <img src="images/photo-13.jpeg" class="image" />
+      <img src="images/photo-14.jpeg" class="image" />
+      <img src="images/photo-15.jpeg" class="image" />
+      <img src="images/photo-16.jpeg" class="image" />
+      <img src="images/photo-17.jpeg" class="image" />
+      <img src="images/photo-18.jpeg" class="image" />
     </div>
   </div>
 
   <script src="js/masonry.js"></script>
-  <script src="js/events.js"></script>
+  <script src="js/masonry-events.js"></script>
   <script src="js/demo2.js"></script>
 
 </body>

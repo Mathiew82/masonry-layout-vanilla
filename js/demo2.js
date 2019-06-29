@@ -1,2 +1,2 @@
-/* Section JS */
-fecthMasonry('masonry-2', 'image-2', 4);
+/* Demo 2 JS */
+fecthMasonry('masonry', 'image', 4);

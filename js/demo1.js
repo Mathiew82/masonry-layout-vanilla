@@ -1,2 +1,2 @@
-/* Main Index JS */
-fecthMasonry('masonry', 'card', 4);
+/* Demo 1 JS */
+fecthMasonry('masonry', 'card', 3);
