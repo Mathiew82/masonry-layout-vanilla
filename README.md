@@ -9,6 +9,8 @@ Simple masonry developed in javascript vanilla.
 
 You only need to download the package, include files in your project js/masonry.min.js and css/masonry.min.css and follow the next steps.
 
+**Note:** In the index.html you have available 2 demos and a test, which will serve as a guide to use the masonry.
+
 #### CSS:
 
     Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
@@ -19,7 +21,7 @@ You only need to download the package, include files in your project js/masonry.
 
 #### JavaScript:
 
-    Place the following <script>s near the end of your pages, right before the closing </body> tag, to enable them.
+    Place the following <script>s near the end of your pages, right before the closing </body> tag.
 
 ```html
   <!-- Include masonry.js file -->
@@ -46,9 +48,9 @@ You only need to download the package, include files in your project js/masonry.
 </div>
 ```
 
-    There must be a parent div (example: #wrapper-masonry), a container (example: #masonry), and the items (example: .image). The containers must have an id, the items a class.
+There must be a parent div (example: #wrapper-masonry), a container (example: #masonry), and the items (example: .image). The containers must have an id, the items a class.
 
-    To use more than one on the same page, you should only use different names for the selectors:
+To use more than one on the same page, you should only use different names for the selectors:
 
 ```html
 <div id="wrapper-masonry">
