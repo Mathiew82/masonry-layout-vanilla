@@ -48,7 +48,7 @@ You only need to download the package, include files in your project js/masonry.
 </div>
 ```
 
-There must be a parent div (example: #wrapper-masonry), a container (example: #masonry), and the items (example: .image). The containers must have an id, the items a class.
+There must be a parent div *(example: **#wrapper-masonry)***, a container *(example: **#masonry**)*, and the items *(example: **.image**)*. The containers must have an id, the items a class.
 
 To use more than one on the same page, you should only use different names for the selectors:
 
@@ -61,7 +61,7 @@ To use more than one on the same page, you should only use different names for t
   </div>
 </div>
 
-<div id="wrapper-masonry-2">
+<div id="wrapper-masonry">
   <div id="masonry-2">
     <div class="card">...</div>
     <div class="card">...</div>
