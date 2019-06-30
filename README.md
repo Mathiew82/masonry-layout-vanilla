@@ -37,7 +37,7 @@ You only need to download the package, include files in your project js/masonry.
     This is the necessary html structure.
 
 ```html
-<div id="wrapper-masonry">
+<div class="wrapper-masonry">
   <div id="masonry">
     <!-- Include a div or image here -->
     <!-- Example -->
