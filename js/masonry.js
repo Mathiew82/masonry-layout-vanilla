@@ -1,13 +1,8 @@
-var itemsEls = null;
-
 const fecthMasonry = (container, items, columns) => {
   const CONTAINER_EL = document.querySelector(`#${container}`);
   const WRAPPER_CONTAINER_EL = CONTAINER_EL.parentNode;
 
-  if (!itemsEls) {
-    itemsEls = Array.from(document.querySelectorAll(`.${items}`));
-  }
-
+  const ITEMS_ELS = Array.from(document.querySelectorAll(`.${items}`));
   CONTAINER_EL.parentNode.removeChild(CONTAINER_EL);
 
   const NEW_CONTAINER_EL = document.createElement('div');
@@ -23,8 +18,8 @@ const fecthMasonry = (container, items, columns) => {
 
   let countColumn = 1;
 
-  itemsEls.forEach((item) => {
-    let col = document.querySelector(`.masonry-column-${countColumn}`);
+  ITEMS_ELS.forEach((item) => {
+    let col = document.querySelector(`#${container} > .masonry-column-${countColumn}`);
     col.appendChild(item);
     countColumn = countColumn < columns ? countColumn + 1 : 1;
   });
