@@ -4,11 +4,10 @@
 
 Simple masonry developed in javascript vanilla.
 
-    You only need to download the package, include files in your project js/masonry.min.js and css/masonry.min.css and follow the next steps.
-
 &nbsp;
 ### Enable it in your project:
 
+You only need to download the package, include files in your project js/masonry.min.js and css/masonry.min.css and follow the next steps.
 
 #### CSS:
 
