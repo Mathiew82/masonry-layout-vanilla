@@ -16,7 +16,7 @@ You only need to download the package, include files in your project js/masonry-
     Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
 
 ```html
-  <link rel="stylesheet" href="css/masonry-layout-vanilla.min.css" />
+<link rel="stylesheet" href="css/masonry-layout-vanilla.min.css" />
 ```
 
 #### JavaScript:
