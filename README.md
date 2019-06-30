@@ -55,8 +55,6 @@ To use more than one on the same page, you should only use different names for t
 ```html
 <div id="wrapper-masonry">
   <div id="masonry">
-    <!-- Include a div or an image here -->
-    <!-- Example -->
     <img src="images/photo-1.jpeg" class="image" />
     <img src="images/photo-2.jpeg" class="image" />
     ...
@@ -65,8 +63,6 @@ To use more than one on the same page, you should only use different names for t
 
 <div id="wrapper-masonry-2">
   <div id="masonry-2">
-    <!-- Include a div or an image here -->
-    <!-- Example -->
     <div class="card">...</div>
     <div class="card">...</div>
     ...
@@ -77,9 +73,9 @@ To use more than one on the same page, you should only use different names for t
     Then in your script, when calling the method:
 
 ```js
-// This would be the masonry of cards
-fecthMasonry('masonry', 'image', 4);
 // This would be the masonry of images
+fecthMasonry('masonry', 'image', 4);
+// This would be the masonry of cards
 fecthMasonry('masonry-2', 'card', 3);
 ```
 
