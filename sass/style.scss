@@ -1,4 +1,7 @@
-$primary-color: #dd0170;
+$palette-color-1: #E83D70;
+$palette-color-2: #57C39E;
+$palette-color-3: #83D2E1;
+$palette-color-4: #EDB642;
 $bg-color: #e0e1e2;
 $border-color: #ccc;
 $border-radius: 8px;
@@ -39,10 +42,10 @@ body {
 }
 
 a {
-  color: $primary-color;
+  color: $palette-color-1;
   text-decoration: none;
   &:hover {
-    color: lighten($primary-color, 10%);
+    color: lighten($palette-color-1, 10%);
   }
 }
 
@@ -65,6 +68,12 @@ img {
   margin-bottom: 2rem;
   @include card-shadow();
   animation: fadeIn 1s;
+}
+
+#logo {
+  width: 200px;
+  box-shadow: none;
+  margin: 0 auto;
 }
 
 #loading {
@@ -108,13 +117,28 @@ img {
 }
 
 .btn {
-  background-color: $primary-color;
+  background-color: $palette-color-1;
   border-radius: $border-radius;
   color: white;
+  display: inline-block;
   margin: 0 10px;
   padding: 14px 30px;
   transition: background-color .2s;
-  &.fr {
+  &.btn--vanilla {
+    background-color: $palette-color-4;
+    color: darken($palette-color-3, 50%);
+    &:hover {
+      background-color: lighten($palette-color-4, 10%);
+      color: darken($palette-color-3, 50%);
+    }
+    &.not-hover {
+      &:hover {
+        background-color: $palette-color-4;
+        cursor: default;
+      }
+    }
+  }
+  &.btn--fr {
     float: right;
     margin: 2rem 0 0 10px;
     padding: 14px 20px;
@@ -129,7 +153,7 @@ img {
     outline: none !important;
   }
   &:hover {
-    background-color: lighten($primary-color, 15%);
+    background-color: lighten($palette-color-1, 10%);
     color: white;
     cursor: pointer;
   }
@@ -143,7 +167,7 @@ img {
   animation: fadeIn 1s;
   @include card-shadow();
   > h4 {
-    color: $primary-color;
+    color: $palette-color-1;
     margin-bottom: 1rem;
   }
 }
