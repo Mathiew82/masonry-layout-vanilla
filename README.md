@@ -39,7 +39,7 @@ You only need to download the package, include files in your project js/masonry.
 ```html
 <div id="wrapper-masonry">
   <div id="masonry">
-    <!-- Include a div or an image here -->
+    <!-- Include a div or image here -->
     <!-- Example -->
     <img src="images/photo-1.jpeg" class="image" />
     <img src="images/photo-2.jpeg" class="image" />
