@@ -13,7 +13,7 @@ You only need to download the package, include files in your project js/masonry-
 
 #### CSS:
 
-    Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
+Copy-paste the stylesheet < link > into your < head > before all other stylesheets to load our CSS.
 
 ```html
 <link rel="stylesheet" href="css/masonry-layout-vanilla.min.css" />
@@ -21,7 +21,7 @@ You only need to download the package, include files in your project js/masonry-
 
 #### JavaScript:
 
-    Place the following <script>s near the end of your pages, right before the closing </body> tag.
+Place the following < script >s near the end of your pages, right before the closing </body> tag.
 
 ```html
   <!-- Include masonry.js file -->
@@ -34,7 +34,7 @@ You only need to download the package, include files in your project js/masonry-
 
 #### HTML:
 
-    This is the necessary html structure.
+This is the necessary html structure.
 
 ```html
 <div class="wrapper-masonry">
@@ -70,7 +70,7 @@ To use more than one on the same page, you should only use different names for t
 </div>
 ```
 
-    Then in your script, when calling the method:
+Then in your script, when calling the method:
 
 ```js
 // This would be the masonry of images
