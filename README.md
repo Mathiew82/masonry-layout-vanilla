@@ -10,9 +10,9 @@ Simple masonry developed in javascript vanilla.
 You only need to download the package:
 
 [masonry-layout-vanilla.js](https://github.com/Mathiew82/masonry-layout-vanilla/blob/master/js/masonry-layout-vanilla.js) *unminify js*
-
+&nbsp;
 or
-
+&nbsp;
 [masonry-layout-vanilla.min.js](https://github.com/Mathiew82/masonry-layout-vanilla/blob/master/js/masonry-layout-vanilla.min.js) *minify js*
 
 and
