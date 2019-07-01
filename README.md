@@ -7,7 +7,7 @@ Simple masonry developed in javascript vanilla.
 &nbsp;
 ### Enable it in your project:
 
-You only need to download the package:
+You only need to download the files:
 
 [masonry-layout-vanilla.js](https://github.com/Mathiew82/masonry-layout-vanilla/blob/master/js/masonry-layout-vanilla.js) *unminify js*
 &nbsp;
