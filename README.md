@@ -24,7 +24,7 @@ Copy-paste the stylesheet < link > into your < head > before all other styleshee
 Place the following < script >s near the end of your pages, right before the closing </body> tag.
 
 ```html
-  <!-- Include masonry.js file -->
+  <!-- Include masonry-layout-vanilla.min.js file -->
   <script src="js/masonry-layout-vanilla.min.js"></script>
   <!-- Include your js file -->
   <script src="js/YOUR_JS_FILE.js"></script>
