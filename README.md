@@ -7,7 +7,19 @@ Simple masonry developed in javascript vanilla.
 &nbsp;
 ### Enable it in your project:
 
-You only need to download the package, include files in your project js/masonry-layout-vanilla.min.js and css/masonry-layout-vanilla.min.css and follow the next steps.
+You only need to download the package:
+
+[masonry-layout-vanilla.js](https://github.com/Mathiew82/masonry-layout-vanilla/blob/master/js/masonry-layout-vanilla.js) *unminify js*
+
+or
+
+[masonry-layout-vanilla.min.js](https://github.com/Mathiew82/masonry-layout-vanilla/blob/master/js/masonry-layout-vanilla.min.js) *minify js*
+
+and
+
+[masonry-layout-vanilla.min.css](https://github.com/Mathiew82/masonry-layout-vanilla/blob/master/css/masonry-layout-vanilla.min.css) *minify css*
+
+Include files in your project and follow the next steps.
 
 **Note:** In the index.html you have available 2 demos and a test, which will serve as a guide to use the masonry.
 
