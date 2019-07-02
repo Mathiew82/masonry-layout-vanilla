@@ -2,9 +2,10 @@
 
 ![](images/logo-min.png)
 
-<div style='color:red; margin: 0 0 50px 0;'><span style="margin-right:10px;">⛔️</span> <b>IMPORTANT:</b> Do not download it yet. It lacks some important details.</div>
+```diff
+- Do not download it yet. It lacks some important details. ⛔️
+```
 
-<div style="color:#ccc;">
 Simple masonry developed in javascript vanilla.
 
 &nbsp;
@@ -102,4 +103,3 @@ fecthMasonry('masonry-2', 'card', 3);
 | First parameter       | String       | The id of the container of items         |
 | Second parameter      | String       | The class of the items                   |
 | Third parameter       | Number       | Number of columns                        |
-</div>
