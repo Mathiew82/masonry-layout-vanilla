@@ -2,6 +2,10 @@
 
 ![](images/logo-min.png)
 
+```diff
+- Do not download it yet. It lacks some important details. ⛔️
+```
+
 Simple masonry developed in javascript vanilla.
 
 &nbsp;
