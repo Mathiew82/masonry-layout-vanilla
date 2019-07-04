@@ -1,8 +1,8 @@
-const fecthMasonry = (container, items, columns) => {
+const fecthMasonry = (container:string, items:string, columns:number) => {
   const CONTAINER_EL = document.querySelector(`#${container}`);
   const WRAPPER_CONTAINER_EL = CONTAINER_EL.parentNode;
 
-  const ITEMS_ELS = Array.from(document.querySelectorAll(`.${items}`));
+  const ITEMS_ELS = document.querySelectorAll(`.${items}`);
   CONTAINER_EL.parentNode.removeChild(CONTAINER_EL);
 
   const NEW_CONTAINER_EL = document.createElement('div');
