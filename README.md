@@ -4,6 +4,8 @@
 
 Simple masonry developed in javascript vanilla.
 
+**[+ Demo online +](https://codepen.io/Mathiew82/pen/qzoKOK)**
+
 &nbsp;
 ### Enable it in your project:
 
